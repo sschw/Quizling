@@ -6,4 +6,4 @@
 </a>
 -->
         <a style="color: black; text-decoration: none;" href="./impressum">Impressum</a></div>
-        <div><a href="https://github.com/sschw/">GitHub sschw</a></div>
+        <div><a style="color: black; text-decoration: none;" href="https://github.com/sschw/">GitHub sschw</a></div>
