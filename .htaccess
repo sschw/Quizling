@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteBase /PATH_TO_QUIZ/
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ index.php?page=$1&subpage=$2&details=$3
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ index.php?page=$1&subpage=$2
+RewriteRule ^([a-zA-Z0-9_-]+)/?$                  index.php?page=$1

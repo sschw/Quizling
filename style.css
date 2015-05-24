@@ -1,0 +1,234 @@
+/** GENERAL SETTINGS **/
+html, body {
+  margin: 0;
+}
+
+body, input[type=submit], input[type=button] {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', Gadget, sans-serif;
+  /*font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Courier New', Courier, 'Andale Mono', monospace;*/
+}
+
+form input {
+  margin: 10px 0;
+  height: 30px;
+  border: solid gray 1px;
+  border-radius: 6px;
+  padding: 0 10px;
+}
+
+input[type=submit]:hover, input[type=button]:hover {
+  background-color: lightgray;
+}
+
+#page {
+  width: 800px;
+  margin: 60px auto 20px auto;
+}
+
+/** ADMIN PANEL **/
+#panel {
+  z-index: 10;
+  height: 29px;
+  font-size: 12px;
+  padding: 5px 50px 5px 15px;
+  /*background-color: gray;
+  border-bottom: 1px solid black;
+  color: black;*/
+  background-image: -webkit-linear-gradient(gray 0%, black 70%); 
+  background-image: -moz-linear-gradient(gray 0%, black 70%); 
+  background-image: -o-linear-gradient(gray 0%, black 70%); 
+  background-image: linear-gradient(gray 0%, black 70%);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#panel form {
+  margin: 0;
+}
+
+#panel input {
+  height: 24px;
+  font-size: 12px;
+  margin: 0 5px 0 15px; 
+}
+
+#panel > span {
+  display: inline-block;
+  margin-top: 6px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+#panel ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#panel li {
+  margin: 0;
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid white;
+}
+
+#panel li:hover {
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+/** ADMIN PANEL TOGGLER **/
+#paneltoggler {
+  z-index: 100;
+  position: fixed;
+  top: 2px;
+  right: 5px;
+}
+
+#paneltoggler img {
+  float: right;
+}
+
+#paneltoggler img:hover {
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+/** HEADER SETTINGS **/
+#header {
+  border: solid gray 1px;
+  border-radius: 6px 6px 6px 6px;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-image: -webkit-linear-gradient(lightgray 0%, gray 100%); 
+  background-image: -moz-linear-gradient(lightgray 0%, gray 100%); 
+  background-image: -o-linear-gradient(lightgray 0%, gray 100%); 
+  background-image: linear-gradient(lightgray 0%, gray 100%);
+}
+
+#title {
+  text-align: center;
+  color: black;
+  font-size: 64px;
+  margin: 20px 0;
+} 
+
+/** BODY SETTINGS **/
+#content {
+  border: solid gray 1px;
+  border-radius: 6px 6px 0 0;
+  margin-top: 5px;
+  padding: 20px;
+}
+
+#content {
+  font-family: Verdana,Geneva,Tahoma,sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  position: relative;
+}
+
+#content a {
+  color: black;
+  text-decoration: none;
+  font-style: italic;
+}
+
+#content #canvasContainer {
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 600px;
+  overflow: hidden;
+}
+
+.adminNavigation:hover {
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+.adminNavigation {
+  margin: 0;
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+
+/** FOOTER SETTINGS **/
+#footer {
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 0 0 6px 6px;
+  padding: 3px 20px;
+}
+
+/** SITE FOOTER SETTINGS **/
+#siteFooter {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.language {
+  cursor: pointer;
+  float: right;
+  margin: 5px;
+}
+
+/** JQGrid Design Fixes **/
+#delmodadminTable {
+  height: auto !important;
+  width: 350px !important;
+}
+
+#gbox_adminTable {
+  width: 760px !important;
+  overflow: hidden;
+}
+
+#gview_adminTable {
+  width: 760px !important;
+  overflow: hidden;
+}
+
+#gview_adminTable .ui-jqgrid-hdiv {
+  width: 760px !important;
+}
+
+#gview_adminTable .ui-jqgrid-bdiv {
+  width: 760px !important;
+  overflow-x: auto;
+}
+
+#padminTable {
+  width: 760px !important;
+}
+
+#padminTable_left {
+  width: auto !important;
+}
+
+/** JQuery UI Fixes **/
+.ui-selectable li {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+.ui-selecting {
+  background: gray !important;
+}
+
+.ui-selected {
+  background: #000000 !important;
+  color: white !important;
+}
